@@ -9,7 +9,7 @@
         </div>
         <div class="card-body">
             <form data-parsley-validate enctype="multipart/form-data"
-                action="{{route('admin.branch.store',$branch->id)}}" method="POST">
+                action="{{route('admin.branch.update',$branch->id)}}" method="POST">
                 @csrf
                 <div class="form-group">
                     <label>Title*</label>
