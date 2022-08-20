@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-@section('title') Teams | Shataphool Bangladesh @endsection
+@section('title') Teams | {{setting('website_name')}} @endsection
 @section('content')
 @include('includes.banner',['programName'=>'Teams'])
 <div id="content">

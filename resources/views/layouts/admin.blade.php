@@ -287,7 +287,7 @@
   <script src="{{asset('admin/assets/extra-libs/DataTables/datatables.min.js')}}"></script>
 
   {{-- ckeditor 4--}}
-  <script src="https://cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+  <script src="https://cdn.ckeditor.com/4.14.0/full/ckeditor.js"></script>
 
   @yield('script')
   <script>

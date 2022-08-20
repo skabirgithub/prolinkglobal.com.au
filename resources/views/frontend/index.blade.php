@@ -145,12 +145,55 @@
     </section>
 
 
+
+
     <!-- OUr Projects -->
-    <section class="portfolio  padding-top-30 padding-bottom-20">
+    <section class="services padding-top-30 padding-bottom-30">
         <div class="container">
             <!-- Heading -->
             <div class="heading text-center">
                 <h4>Our Projects</h4>
+            </div>
+        </div>
+        <div class="best-services">
+            <!-- Row -->
+            <div class="container">
+                <ul class="row list">
+                    <!-- Analytics -->
+                    @foreach ($projects as $project)
+                    <li class="col-md-3">
+                        <div class="img-hover-zoom img-hover-zoom--slowmo">
+                            <img src="{{asset('program_images/'.$project->image)}}" alt="" height="180px">
+                        </div>
+                        <article class="thumb"><a class="" href="{{$project->programUrl()}}">
+                                <h5>{{$project->title}}</h5>
+                                <p>{!!Str::limit($project->details,100)!!}</p>
+                            </a>
+                        </article>
+                    </li>
+                    @endforeach
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center margin-top-50 margin-bottom-50 animate fadeInUp" data-wow-delay="0.4s">
+            <div> <a href="{{route('program.different','Project')}}" class="btn btn-1">
+                    View All <i class="fa fa-caret-right"></i>
+                </a>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Our Associates -->
+    <section class="portfolio  padding-top-30 padding-bottom-20">
+        <div class="container">
+            <!-- Heading -->
+            <div class="heading text-center">
+                <h4>Our Associates</h4>
             </div>
 
         </div>
@@ -158,19 +201,19 @@
         <!-- PORTFOLIO ROW -->
         <div class="ajax-work col-3">
             <!-- ITEMS -->
-            @foreach ($projects as $project)
+            @foreach ($associates as $associate)
 
             <div class="cbp-item ana dial growth">
-                <article class="item"><img class="img-responsive" src="{{asset('program_images/'.$project->image)}}"
+                <article class="item"><img class="img-responsive" src="{{asset('program_images/'.$associate->image)}}"
                         alt="">
                     <!-- Hover -->
                     <div class="over-detail">
                         <!-- Link -->
-                        <div class="top-detail"> <a href="{{$project->programUrl()}}" class=""><i
+                        <div class="top-detail"> <a href="{{$associate->programUrl()}}" class=""><i
                                     class="fa fa-link"></i> </a> </div>
                         <!-- TITTLE HEADING -->
                         <div class="bottom-detail">
-                            <h3>{{$project->title}}</h3>
+                            <h3>{{$associate->title}}</h3>
                         </div>
                     </div>
                 </article>
@@ -182,53 +225,15 @@
         <!-- LOAD MORE -->
 
         <div class="text-center margin-top-50 margin-bottom-50 animate fadeInUp" data-wow-delay="0.4s">
-            <div> <a href="{{route('program.different','Project')}}" class="btn btn-1">
-                    View All <i class="fa fa-caret-right"></i>
-                </a>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- Our associates -->
-    <section class="services padding-top-30 padding-bottom-30">
-        <div class="container">
-            <!-- Heading -->
-            <div class="heading text-center">
-                <h4>Our Associates</h4>
-            </div>
-        </div>
-        <div class="best-services">
-            <!-- Row -->
-            <div class="container">
-                <ul class="row list">
-                    <!-- Analytics -->
-                    @foreach ($associates as $associate)
-                    <li class="col-md-4">
-                        <div class="img-hover-zoom img-hover-zoom--slowmo">
-                            <img src="{{asset('program_images/'.$associate->image)}}" alt="">
-                        </div>
-                        <article class="thumb"><a class="" href="{{$associate->programUrl()}}">
-                                <h5>{{$associate->title}}</h5>
-                                <p>{!!Str::limit($associate->details,100)!!}</p>
-                            </a>
-                        </article>
-                    </li>
-                    @endforeach
-
-                </ul>
-            </div>
-        </div>
-
-        <div class="text-center margin-top-50 margin-bottom-50 animate fadeInUp" data-wow-delay="0.4s">
             <div> <a href="{{route('program.different','Associate')}}" class="btn btn-1">
                     View All <i class="fa fa-caret-right"></i>
                 </a>
             </div>
         </div>
 
-
     </section>
+
+
 
 
 

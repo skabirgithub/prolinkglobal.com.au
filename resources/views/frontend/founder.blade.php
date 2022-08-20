@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-@section('title') Advisor Shataphool Bangladesh @endsection
+@section('title') Advisor | {{setting('website_name')}} @endsection
 @section('content')
 @include('includes.banner',['programName'=>'Advisor'])
 <!-- WHO WE ARE -->

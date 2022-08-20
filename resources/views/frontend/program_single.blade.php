@@ -1,5 +1,5 @@
 @extends('layouts.frontend')
-@section('title') {{$program->category}} @endsection
+@section('title') {{$program->category}} | {{$program->title}} @endsection
 @section('content')
 @include('includes.banner',['programName'=>$program->category])
 <!-- Content -->
@@ -46,7 +46,7 @@
             </div>
             @if ($program->category == 'News')
             @foreach (App\Models\Program::where('category','News')->latest()->get() as $news)
-                
+
             <div class="row">
 
 

@@ -1,7 +1,11 @@
+@php
+    $current = ["Program", "Event",];
+    $new   = ["Service", "Skill"];
+@endphp
 @extends('layouts.frontend')
-@section('title') {{str_replace('Event', 'Skills', $category).str_replace('Program', 'Service', $category)}} @endsection
+@section('title') {{str_replace($current, $new, $category)}} @endsection
 @section('content')
-@include('includes.banner',['programName'=>str_replace('Event', 'Skills', $category).str_replace('Program', 'Service', $category)])
+@include('includes.banner',['programName'=>str_replace($current, $new, $category)])
 <div id="content">
 
     <!-- WHO WE ARE -->
@@ -9,7 +13,7 @@
         <div class="container">
 
             <div class="text-center">
-                <h4 class="primary-color">{{str_replace('Event', 'Skills', $category).str_replace('Program', 'Service', $category)}}</h4>
+                <h4 class="primary-color">{{str_replace($current, $new, $category)}}</h4>
                 <hr>
                 <ul class="row items">
                     @foreach ($programs as $program)

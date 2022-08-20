@@ -9,7 +9,7 @@
         <div class="container">
 
             <!-- Job  Content -->
-            <div class="col-md-8">
+            <div class="col-md-12">
 
                 <!-- About Admin -->
                 <h4 class="font-normal margin-bottom-20">Latest Resource</h4>
@@ -32,7 +32,7 @@
                                                 <span>{{date('M ',strtotime($publication->created_at))}}</span> </div>
                                         </div>
                                         <div class="media-body">
-                                            <h5>{{$publication->title}}</h5>
+                                            <h5 id="{{$publication->title}}">{{$publication->title}}</h5>
                                         </div>
                                     </div>
                                 </a>
@@ -40,28 +40,49 @@
                             </div>
 
                             <!-- ADD INFO HERE -->
-                            <div id="job{{$publication->id}}" class="panel-collapse collapse">
+                            <div id="job{{$publication->id}}" class="panel-collapse collapse in">
                                 <div class="panel-body">
                                     <p>
 
                                         {!!substr($publication->details, 100, 65530)!!}
-                                        @if ($publication->image != NULL)
-                                        <p style="color: blue"> <a download
+
+
+                                        {{-- @if ($publication->image != NULL)
+                                        <p style="color: blue; float: right"> <a download
                                                 href="{{asset('files/'.$publication->image)}}">Download
                                                 File</a></p>
 
-                                        @endif
+                                        @endif --}}
                                     </p>
 
                                     <br>
+
+                                    @if ($publication->image != NULL)
+                                        <img class="img-responsive col-md-12" src="{{asset('files/'.$publication->image)}}" alt="{{$publication->title}}">
+                                        <br>
+                                        <p style="color: blue;"> <a download
+                                            href="{{asset('files/'.$publication->image)}}">Download
+                                            File</a></p>
+                                    @endif
+
+
+                                    {{-- <p>  sdfds </p> --}}
+                                    <hr>
+
 
                                     <!-- Share -->
                                     {{-- <div class="col-md-4"> <a href="#." class="sm-tags"></a> </div> --}}
 
                                     <!-- Clodes -->
-                                    <div class="col-md-3 text-right pull-right"> <a class="sm-tags"
-                                            data-toggle="collapse" href="#job{{$publication->id}}"> <i
-                                                class="fa fa-angle-up margin-right-5"></i>Less Info </a> </div>
+                                    <div class="col-md-6 text-right pull-right">
+                                        @if ($publication->image != NULL)
+                                            <a class="sm-tags" href="{{asset('files/'.$publication->image)}}">
+                                                <i class="fa fa-download margin-right-5"></i> Download </a>
+                                        @endif
+
+                                        <a class="sm-tags" data-toggle="collapse" href="#job{{$publication->id}}">
+                                            <i class="fa fa-angle-up margin-right-5"></i> Less Info </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

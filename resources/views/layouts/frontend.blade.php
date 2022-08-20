@@ -79,37 +79,37 @@
         <header>
 
             <!-- Top bar -->
-            <!-- <div class="top-bar">
+            <div class="top-bar">
                 <div class="top-info">
                     <div class="container">
                         <ul class="personal-info">
                             <li>
-                                <p><i class="fa fa-phone"></i> +8801711062767 </p>
+                                <p><i class="fa fa-phone"></i> {{setting('phone_number')}} </p>
                             </li>
 
                             <li>
-                                <p><i class="fa fa-envelope"></i> shataphool@gmail.com </p>
+                                <p><i class="fa fa-envelope"></i> {{setting('email')}} </p>
                             </li>
-                        </ul> -->
+                        </ul>
 
             <!-- Right Sec -->
-            <!-- <div class="right-sec"> -->
+            <div class="right-sec">
 
             <!-- Language -->
-            <!-- <select class="selectpicker">
+            {{-- <select class="selectpicker">
               <option>English</option>
               <option>French</option>
               <option>Relish</option>
-            </select> -->
+            </select> --}}
 
             <!-- social -->
-            <!-- <ul class="social">
-                                <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+            <ul class="social">
+                                <li><a href="{{setting('facebook')}}"><i class="fa fa-facebook"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- Navigation -->
             <nav class="navbar">
@@ -117,8 +117,8 @@
                     <div class="container">
 
                         <!-- LOGO -->
-                        <div class="logo" style="margin-top: -20px"> <a href="{{route('index')}}"><img
-                                    class="img-responsive" src="{{asset('images/'.setting('logo'))}}" alt=""></a> </div>
+                        <div class="logo" style="margin-top: -15px"> <a href="{{route('index')}}"><img
+                                    class="img-responsive" width="120px" src="{{asset('images/'.setting('logo'))}}" alt=""></a> </div>
 
                         <!-- Nav -->
                         <ul class="nav ownmenu">
