@@ -45,6 +45,8 @@
                         <option value="Higher Management">Higher Management</option>
                         <option value="Head Office">Head Office</option>
                         <option value="Field">Field</option>
+                        <option value="Advisor">Advisor</option>
+                        <option value="Team Members">Team Members</option>
                     </select>
                 </div>
 

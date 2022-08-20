@@ -56,6 +56,10 @@
                             @endif value="Head Office">Head Office</option>
                         <option @if ($team->type == "Field") selected
                             @endif value="Field">Field</option>
+                        <option @if ($team->type == "Advisor") selected
+                            @endif value="Advisor">Advisor</option>
+                        <option @if ($team->type == "Team Member") selected
+                            @endif value="Team Member">Team Member</option>
                     </select>
                 </div>
 
