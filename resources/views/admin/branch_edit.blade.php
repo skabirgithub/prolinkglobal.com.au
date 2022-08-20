@@ -10,7 +10,7 @@
         <div class="card-body">
             <form data-parsley-validate enctype="multipart/form-data" action="{{route('admin.branch.update',$branch->id)}}" method="POST">
                 @csrf
-                @method('PUT')
+                @method('PATCH')
                 <div class="form-group">
                     <label>Title*</label>
                     <input autofocus value="{{$branch->title}}" required name="title" style="background: #f5f6fa"
