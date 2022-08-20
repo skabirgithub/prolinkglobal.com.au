@@ -173,6 +173,8 @@
     </section>
     @endif
 
+
+    
     @if($teams->where('type','Field')->count()>0)
     <section class="team team-wrap padding-top-70 padding-bottom-20">
         <div class="container">
