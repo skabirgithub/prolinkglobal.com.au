@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
-@section('title') {{$category}} @endsection
+@section('title') {{str_replace('Event', 'Skills', $category).str_replace('Program', 'Service', $category)}} @endsection
 @section('content')
-@include('includes.banner',['programName'=>$category])
+@include('includes.banner',['programName'=>str_replace('Event', 'Skills', $category).str_replace('Program', 'Service', $category)])
 <div id="content">
 
     <!-- WHO WE ARE -->
@@ -9,7 +9,7 @@
         <div class="container">
 
             <div class="text-center">
-                <h4 class="primary-color">{{$category}}</h4>
+                <h4 class="primary-color">{{str_replace('Event', 'Skills', $category).str_replace('Program', 'Service', $category)}}</h4>
                 <hr>
                 <ul class="row items">
                     @foreach ($programs as $program)

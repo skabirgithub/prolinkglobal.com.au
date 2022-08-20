@@ -118,7 +118,7 @@
         <div class="container">
             <!-- Heading -->
             <div class="heading text-center">
-                <h4>Core Programs</h4>
+                <h4>Our Services</h4>
             </div>
             <!-- Blog Row -->
             <div class="row blog-slide">
@@ -280,7 +280,7 @@
         <div class="container">
             <!-- Heading -->
             <div class="heading text-center">
-                <h4>Events</h4>
+                <h4>Our Skills</h4>
             </div>
         </div>
         <div class="blog blog-pages">
@@ -326,44 +326,44 @@
     </section>
 
     <!-- Notice -->
-    <section class="padding-top-30 padding-bottom-30">
-        <div class="heading text-center">
-            <h4>Notices</h4>
-        </div>
+    <!--<section class="padding-top-30 padding-bottom-30">-->
+    <!--    <div class="heading text-center">-->
+    <!--        <h4>Notices</h4>-->
+    <!--    </div>-->
 
-        <div id="owl-example" class="owl-carousel">
-            @foreach ($notices as $notice)
-            <div class="container col-md-5 text-center" style="float: initial;">
-                <div class="job-content job-post-page margin-20" style="border: 0px;    padding-bottom: 20px;">
-                    <div class="panel panel-default" style="border: 0px;">
+    <!--    <div id="owl-example" class="owl-carousel">-->
+    <!--        @foreach ($notices as $notice)-->
+    <!--        <div class="container col-md-5 text-center" style="float: initial;">-->
+    <!--            <div class="job-content job-post-page margin-20" style="border: 0px;    padding-bottom: 20px;">-->
+    <!--                <div class="panel panel-default" style="border: 0px;">-->
                         <!-- Save -->
-                        <div class="star-save"><a href="{{$notice->programUrl()}}"><i class="fa fa-caret-right"></i></a>
-                        </div>
+    <!--                    <div class="star-save"><a href="{{$notice->programUrl()}}"><i class="fa fa-caret-right"></i></a>-->
+    <!--                    </div>-->
                         <!-- PANEL HEADING -->
-                        <div class="panel-heading" style="border: 0px;"> <a href="{{$notice->programUrl()}}">
-                                <div class="job-tittle">
-                                    <div class="media-left">
-                                        <div class="date"> {{date('d ',strtotime($notice->created_at))}}
-                                            <span>{{date('M ',strtotime($notice->created_at))}}</span>
-                                        </div>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5>{{$notice->title}}</h5>
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </a>
-                            <p> {!!Str::limit($notice->details,100)!!}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @endforeach
+    <!--                    <div class="panel-heading" style="border: 0px;"> <a href="{{$notice->programUrl()}}">-->
+    <!--                            <div class="job-tittle">-->
+    <!--                                <div class="media-left">-->
+    <!--                                    <div class="date"> {{date('d ',strtotime($notice->created_at))}}-->
+    <!--                                        <span>{{date('M ',strtotime($notice->created_at))}}</span>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                                <div class="media-body">-->
+    <!--                                    <h5>{{$notice->title}}</h5>-->
+    <!--                                    <span></span>-->
+    <!--                                </div>-->
+    <!--                            </div>-->
+    <!--                        </a>-->
+    <!--                        <p> {!!Str::limit($notice->details,100)!!}</p>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--        @endforeach-->
 
-        </div>
+    <!--    </div>-->
 
 
-    </section>
+    <!--</section>-->
 
     <!-- Testimonial -->
     <section class="testi-bg padding-top-30 padding-bottom-30">

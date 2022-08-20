@@ -6,31 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="M_Adnan">
+    <meta name="author" content="Skoder">
     <title>@yield('title')</title>
 
     <meta name="description"
-        content="Shataphool Bangladesh is a non-government, not-for-profit, non-sectarian, and non-political organization working for social development of vulnerable people who haven’t progressed as they should have. In 2000, the organization came into being when Mr. M. Shafiqul Islam (UNO of Mohanpur Upazila) founded it with a group of young and energetic people, who were highly motivated and committed to contributing their time, skills and energies for the development and empowerment of socially disadvantaged and vulnerable communities in Mohanpur, addressing poverty issues and eliminating gender based discriminations. ">
+        content="The company has been formed by a group of expert professionals having vivid experience and international exposure in Information and Communication Technology (ICT). People involved here are well known academic in ICT sector, highly qualified business graduates and qualified engineers from the renowned universities across the globe. ">
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Shataphool Bangladesh">
+    <meta itemprop="name" content="Prolink Global">
     <meta itemprop="description"
-        content="Shataphool Bangladesh is a non-government, not-for-profit, non-sectarian, and non-political organization working for social development of vulnerable people who haven’t progressed as they should have. In 2000, the organization came into being when Mr. M. Shafiqul Islam (UNO of Mohanpur Upazila) founded it with a group of young and energetic people, who were highly motivated and committed to contributing their time, skills and energies for the development and empowerment of socially disadvantaged and vulnerable communities in Mohanpur, addressing poverty issues and eliminating gender based discriminations. ">
+        content="It is a company where professionals from both technical and functional field group together with an objective of providing appropriate solutions based on customer needs. It realizes the importance of functional knowledge and its impact in developing the solutions. We constantly endeavor to be a leading technology firm with profound business and functional knowledge. The key to the company's success is the maintenance of a close working relationship with the clients through ensuring the best possible solutions to their needs; to establish and maintain a thorough knowledge and understanding of client's objective and help them maximize the benefits. ">
     <meta itemprop="image" content="https://portfolio.skoder.tech/gallery_images/big-15957512045f1d3b2467188.jpg">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://portfolio.skoder.tech">
+    <meta property="og:url" content="https://skoder.co">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Shataphool Bangladesh">
+    <meta property="og:title" content="Prolink Global">
     <meta property="og:description"
-        content="Shataphool Bangladesh is a non-government, not-for-profit, non-sectarian, and non-political organization working for social development of vulnerable people who haven’t progressed as they should have. In 2000, the organization came into being when Mr. M. Shafiqul Islam (UNO of Mohanpur Upazila) founded it with a group of young and energetic people, who were highly motivated and committed to contributing their time, skills and energies for the development and empowerment of socially disadvantaged and vulnerable communities in Mohanpur, addressing poverty issues and eliminating gender based discriminations. ">
+        content="The company has been formed by a group of expert professionals having vivid experience and international exposure in Information and Communication Technology (ICT). People involved here are well known academic in ICT sector, highly qualified business graduates and qualified engineers from the renowned universities across the globe. ">
     <meta property="og:image" content="https://portfolio.skoder.tech/gallery_images/big-15957512045f1d3b2467188.jpg">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Shataphool Bangladesh">
+    <meta name="twitter:title" content="Prolink Global">
     <meta name="twitter:description"
-        content="Shataphool Bangladesh is a non-government, not-for-profit, non-sectarian, and non-political organization working for social development of vulnerable people who haven’t progressed as they should have. In 2000, the organization came into being when Mr. M. Shafiqul Islam (UNO of Mohanpur Upazila) founded it with a group of young and energetic people, who were highly motivated and committed to contributing their time, skills and energies for the development and empowerment of socially disadvantaged and vulnerable communities in Mohanpur, addressing poverty issues and eliminating gender based discriminations. ">
+        content="It is a company where professionals from both technical and functional field group together with an objective of providing appropriate solutions based on customer needs. It realizes the importance of functional knowledge and its impact in developing the solutions. We constantly endeavor to be a leading technology firm with profound business and functional knowledge. The key to the company's success is the maintenance of a close working relationship with the clients through ensuring the best possible solutions to their needs; to establish and maintain a thorough knowledge and understanding of client's objective and help them maximize the benefits. ">
     <meta name="twitter:image" content="https://portfolio.skoder.tech/gallery_images/big-15957512045f1d3b2467188.jpg">
 
     <!-- Meta Tags Generated via http://heymeta.com -->
@@ -136,16 +136,18 @@
                                     <li> <a href="{{route('galleries')}}">Gallery</a> </li>
                                 </ul>
                             </li>
-                            <li> <a href="#">Activities</a>
-                                <ul class="dropdown">
-                                    <li> <a href="{{route('program.different','Program')}}">Core Programs </a> </li>
-                                    <li> <a href="{{route('program.different','Project')}}">Projects </a> </li>
-                                </ul>
-                            </li>
-                            <li> <a href="{{route('program.different','Associate')}}">Associates </a> </li>
+                            <!--<li> <a href="#">Activities</a>-->
+                            <!--    <ul class="dropdown">-->
+                            <!--        <li> <a href="{{route('program.different','Program')}}">Core Programs </a> </li>-->
+                            <!--        <li> <a href="{{route('program.different','Project')}}">Projects </a> </li>-->
+                            <!--    </ul>-->
+                            <!--</li>-->
+                            <!--<li> <a href="{{route('program.different','Associate')}}">Associates </a> </li>-->
+                            <li> <a href="{{route('program.different','Program')}}">Services </a> </li>
+                            <li> <a href="{{route('program.different','Project')}}">Projects </a> </li>
                             <li> <a href="{{route('publications')}}">Resources </a> </li>
                             <li> <a href="{{route('jobs')}}">Career </a> </li>
-                            <li> <a href="{{route('program.different','Event')}}">Events </a> </li>
+                            <li> <a href="{{route('program.different','Event')}}">Skills </a> </li>
                             <li> <a href="{{route('notices')}}">Notices </a> </li>
                             <li> <a href="{{route('contact')}}">Contact</a> </li>
                         </ul>
@@ -201,7 +203,7 @@
                         <h6>Site Map</h6>
                         <ul class="col-md-6 tweet">
                             <li> <a href="{{route('about')}}">About </a> </li>
-                            <li> <a href="{{route('program.different','Program')}}">Core Programs </a> </li>
+                            <li> <a href="{{route('program.different','Program')}}">Core Services </a> </li>
                             <li> <a href="{{route('program.different','Project')}}">Projects </a> </li>
                             <li> <a href="{{route('program.different','Associate')}}">Associates </a> </li>
 
@@ -209,7 +211,7 @@
                         <ul class="col-md-6 tweet">
                             <li> <a href="{{route('program.different','Resource')}}">Resource</a> </li>
                             <li> <a href="{{route('jobs')}}">Career</a> </li>
-                            <li> <a href="{{route('program.different','Event')}}">Events </a> </li>
+                            <li> <a href="{{route('program.different','Event')}}">Skills </a> </li>
                             <li> <a href="{{route('notices')}}">Notices </a> </li>
                         </ul>
                     </div>
@@ -245,12 +247,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Shataphool © All Rights Reserved || Technology Partner <a class="primary-color margin-0"
-                                href="//skoder.co">Skoder</a> </p>
+                        <p>Prolink © All Rights Reserved </p>
                     </div>
-                    <div class="col-md-6 text-right"> <a href="{{route('privacy.policy')}}">Privacy Policy</a> <a
-                            href="{{route('terms.and.conditions')}}">Terms &
-                            Conditions</a> </div>
+                    <!--<div class="col-md-6 text-right"> <a href="{{route('privacy.policy')}}">Privacy Policy</a> <a-->
+                    <!--        href="{{route('terms.and.conditions')}}">Terms &-->
+                    <!--        Conditions</a> </div>-->
                 </div>
             </div>
         </div>
