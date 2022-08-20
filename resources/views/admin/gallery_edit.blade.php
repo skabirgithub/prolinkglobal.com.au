@@ -8,8 +8,7 @@
             <h2>Edit Gallery</h2>
         </div>
         <div class="card-body">
-            <form data-parsley-validate enctype="multipart/form-data" action="{{route('admin.gallery.update',$gallery->id)}}"
-                method="POST">
+            <form data-parsley-validate enctype="multipart/form-data" action="{{route('admin.gallery.update',$gallery->id)}}" method="POST">
                 @csrf
                 @method('PUT')
                 <div class="form-group">

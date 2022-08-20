@@ -8,9 +8,9 @@
             <h2>Edit Branch</h2>
         </div>
         <div class="card-body">
-            <form data-parsley-validate enctype="multipart/form-data"
-                action="{{route('admin.branch.update',$branch->id)}}" method="POST">
+            <form data-parsley-validate enctype="multipart/form-data" action="{{route('admin.branch.update',$branch->id)}}" method="POST">
                 @csrf
+                @method('PUT')
                 <div class="form-group">
                     <label>Title*</label>
                     <input autofocus value="{{$branch->title}}" required name="title" style="background: #f5f6fa"

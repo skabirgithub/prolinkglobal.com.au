@@ -106,6 +106,7 @@ class BranchController extends Controller
      */
     public function edit(Branch $branch)
     {
+        // return $branch;
         return view('admin.branch_edit', compact('branch'));
     }
 
@@ -118,6 +119,7 @@ class BranchController extends Controller
      */
     public function update(Request $request, Branch $branch)
     {
+        // return $request;
         $this->validate($request, [
             'title' => 'required|max:191',
             'short_details' => 'required|string|max:191',
