@@ -51,10 +51,9 @@
                         <h6>Our keys for development:</h6>
                         <p class="text-justify">The company has been formed by a group of expert professionals having
                             vivid experience and international exposure in Information and Communication Technology
-                            (ICT). People involved here are well known academic in ICT sector, highly qualified business
-                            graduates and qualified engineers from the renowned universities across the globe.
-<br>
-                            The resource personnel involved in collaboration of the sister concern company Prolink
+                            (ICT) since 2013. People involved here are well known academic in ICT sector, highly qualified business experts and qualified engineers from the renowned universities across the globe.
+                            <br>
+                            The management personnel involved in collaboration of the sister concern company Prolink
                             Limited have been consistently providing reliable support, services and consultancy to a
                             wide variety of corporate houses either in the capacity of executive or as business partner
                             or consultant. Bottom line of the company philosophy is building a long-term business
