@@ -2,6 +2,14 @@
 @section('title') Teams | Shataphool Bangladesh @endsection
 @section('content')
 @include('includes.banner',['programName'=>'Teams'])
+<script>
+    .text-left img {
+            /* width: 100%; // how much you want */
+            height: 300px;
+            float: left;
+            margin: 10px;
+        }
+</script>
 <div id="content">
 
     <!-- WHO WE ARE -->

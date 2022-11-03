@@ -47,7 +47,7 @@
             <div class="who-we">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="font-normal"> PROLINK GLOBAL: YOUR AUTOMATION PARTNER</h3>
+                        <h3 class="font-normal">PROLINK GLOBAL: YOUR AUTOMATION PARTNER</h3>
                         <h6>Our keys for development:</h6>
                         <p class="text-justify">The company has been formed by a group of expert professionals having
                             vivid experience and international exposure in Information and Communication Technology
